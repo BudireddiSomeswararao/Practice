@@ -1,0 +1,56 @@
+<!--<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstName='Somesh'">
+
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="firstName"></p>
+<p>You wrote: {{ firstName }}</p>
+</div>
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div data-ng-app="" data-ng-init="num=1;num1=5">
+<h2> Calculator</h2>
+NumbnerValue: <input type="number" ng-model="num"><br>
+NumbnerValue1: <input type="number" ng-model="num1"><br>
+<p><b>Total value</b> {{num * num1}}</p>
+</div>
+</body>
+</html>-->
+<div class="row app-container">
+    <div class="cel text center">
+    <h1>Addition</h1>
+    First Number: <input type="#text" #firstnumber/>
+    <br>
+    Second Number:<input type="#text" #secondnumber/><br><br>
+    <button (click)="calculate(firstnumber.value,secondnumber.value)">Add</button><br><br>
+    <button (click)="calc(firstnumber.value,secondnumber.value)">sub</button><br><br>
+    {{result}}<br>{{res}}
+    </div>
+
+
+    <div class="cel text center">
+        <h1>Subtraction</h1>
+        First Number: <input type="#text" #firstnum/>
+        <br>
+        Second Number:<input type="#text" #secondnum/><br><br>
+        <button (click)="calc(firstnum.value,secondnum.value)">sub</button><br><br>
+       
+        {{res}}
+        </div>
+
+        <h1>{{firstName}}</h1>
+
+
+
+</div>
+
+
+
+
